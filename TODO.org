@@ -1,0 +1,4 @@
+#+TITLE: Guap
+#+AUTHOR: Guap Team
+#+OPTIONS: toc:3 ^:nil
+#+STARTUP: align indent fold entitiespretty logdone

@@ -13,7 +13,7 @@ help:
 bake: ## Init a poetry env and installing some useful packages (run this first). Install poetry with `pip install poetry`.
 	@poetry init
 	@poetry add  loguru
-	@poetry add --dev pytest-cov tox radon cloc black isort mypy
+	@poetry add --dev hypothesis pytest-cov tox radon cloc black isort mypy setuptools
 	@echo "Python 🐍 env set using Poetry 🎉"
 	@git init .
 	@echo "Coding time! ✨ 🚀"
@@ -41,10 +41,10 @@ tox: ## Run tox.
 	@echo "The tests pass! ✨ 🍰 ✨"
 
 reqs: ## Generate a requirements.txt file.
-	@poetry export --without-hashes -f requirements.txt -o requirements.txt
+	@poetry export --without-hashes -f requirements.txt -o requirements/prod.txt
 
 reqs_dev: ## Generate a requirements_dev.txt file.
-	@poetry export --dev --without-hashes -f requirements.txt -o requirements_dev.txt
+	@poetry export --dev --without-hashes -f requirements.txt -o requirements/dev.txt
 
 cloc: ## Count blank lines, comment lines, and physical lines of source code.
 	@poetry run cloc --exclude-dir .venv,.DS_Store --exclude-ext gif,pyc .
@@ -67,6 +67,8 @@ mypy: ## Run mypy for data type check
 
 clean: ## Delete unwanted files.
 	@rm -rf `find . -name __pycache__`
+	@rm -rf `find . -name dist`
+	@rm -rf `find . -name build`
 	@rm -rf `find . -name .DS_Store`
 	@rm -f `find . -type f -name '*.py[co]' `
 	@rm -f `find . -type f -name '*~' `

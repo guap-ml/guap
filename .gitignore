@@ -1,0 +1,58 @@
+# Hidden files
+.DS_store
+
+# Exception for this template
+poetry.lock
+
+# Credentials
+credentials
+credentials.tar
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Unit test / coverage reports
+htmlcov/
+htmlcov-py36/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+
+# Ignore sensitive data
+*.csv
+*.xlsx
+
+# Sphinx documentation
+docs/_build/
+
+# mkdocs documentation
+/site
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+.vscode/
+.pytest-cache/
+.empty/
+
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/

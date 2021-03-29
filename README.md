@@ -1,7 +1,7 @@
 <h3 align="center">
 <img src="https://github.com/guap-ml/guap-docs/blob/main/guap.png?raw=true" alt="guap" width="300"></a>
 </h3>
-<h3 align="center">The ✨magical✨ ML evalutation metric everyone can agree on</h3>
+<h3 align="center">The ✨magical✨ ML evaluation metric everyone can agree on</h3>
 
 <p align="center">
 <strong>
@@ -32,7 +32,7 @@
 Our mission with guap is to align all stakeholders with measurable business outcomes by including the three core teams — business, data science and IT — throughout the life cycle of the AI models.
 
 - Make collaboration healthier and clearer between tech and non-tech people
-- Make better decisions during the lifecycle of the ML project
+- Make better decisions at every stage of the ML project lifecycle
 
 Want to know more? Read [Why guap exist](https://guap-ml.github.io/guap-docs/blog/why-guap).
 

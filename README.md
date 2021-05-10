@@ -34,7 +34,7 @@ Our mission with guap is to align all stakeholders with measurable business outc
 - Make collaboration healthier and clearer between tech and non-tech people
 - Make better decisions at every stage of the ML project lifecycle
 
-Want to know more? Read [Why guap exist](https://guap-ml.github.io/guap-docs/blog/why-guap).
+Want to know more? Read [Why guap exist](https://ulyssebottello.com/why-guap/).
 
 ## Quickstart Install
 🚧 Under construction, too

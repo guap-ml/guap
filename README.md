@@ -1,6 +1,5 @@
-<h3 align="center">
-<img src="https://github.com/guap-ml/guap-docs/blob/main/guap.png?raw=true" alt="guap" width="300"></a>
-</h3>
+<h1 align="center">
+guap</h1>
 <h3 align="center">The ✨magical✨ ML evaluation metric everyone can agree on</h3>
 
 <p align="center">

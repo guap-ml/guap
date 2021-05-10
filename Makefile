@@ -2,7 +2,7 @@
 
 .DEFAULT_GOAL := help
 
-repo_name = "guap"
+repo_name = guap
 version = 0.1.0
 
 
@@ -24,9 +24,6 @@ devmoji: ## Init devmoji (add emojis to commit messages). Install it with `npm i
 
 update_deps: ## Update dependencies.
 	@poetry update
-
-start: ## Start the API locally.
-	# @poetry run uvicorn $(repo_name).main:app --host 0.0.0.0 --port $(port)
 
 test: ## Run unit tests.
 	@poetry run pytest --disable-pytest-warnings
@@ -63,7 +60,15 @@ isort: ## Sort the imports using isort.
 	@poetry run isort .
 
 mypy: ## Run mypy for data type check
-	@poetry run mypy .
+	@poetry run mypy $(repo_name)/
+
+build: ## Build the python package using Poetry.
+	@poetry build
+
+generate_setup: ## Generate a setup.py file.
+	@tar -xvf dist/*.tar.gz '*/setup.py'
+	@cp $$(find . -name setup.py | head -1) setup.py
+	@poetry run black setup.py
 
 clean: ## Delete unwanted files.
 	@rm -rf `find . -name __pycache__`
@@ -76,6 +81,7 @@ clean: ## Delete unwanted files.
 	@rm -rf `find . -type d -name '*.egg-info' `
 	@rm -rf `find . -type d -name 'pip-wheel-metadata' `
 	@rm -rf `find . -type d -name 'tmp*' `
+	@rm -rf `find . -type d -name $(repo_name)-$(version)`
 	@rm -rf .DS_Store
 	@rm -rf .cache
 	@rm -rf .pytest_cache
@@ -88,4 +94,5 @@ clean: ## Delete unwanted files.
 	@find . -name '*.pyc' -exec rm --force {} +
 	@find . -name '*.pyo' -exec rm --force {} +
 	@find . -name '*~'    -exec rm --force {} +
+	@find . -name '.tox'  -exec rm --force {} +
 	@echo "Your repo is clean! 🧹 👌🏼 ✨"

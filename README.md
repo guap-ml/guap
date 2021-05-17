@@ -45,6 +45,8 @@ We're on the journey to make sure every ML use-case that go to production is a v
 - **Get the total profit** Based on the test set, guap will give you the total expected profit based on the cost matrix. A great way to have an overview of the model profitability.
 - **Average profit per prediction** Along the total profit score, guap will give you the average profit/cost per prediction. Perfect if you have costs per prediction, or if you need to estimate the profitability while scaling.
 
+That's it...for now! Keep up-to-date with release announcements on Twitter [@guap_ml](https://twitter.com/guap_ml)!
+
 ## 🪄 Quickstart Install
 First install the package using pip
 

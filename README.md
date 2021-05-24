@@ -28,6 +28,7 @@ guap is an open-source python package that helps data team to get an ML evaluati
 	<a href="https://github.com/chetanraj/awesome-github-badges">
         <img alt="version" src="https://img.shields.io/badge/version-0.1.0-gree">
     </a>
+
 </p>
 
 
@@ -54,7 +55,7 @@ First install the package using pip
 pip install guap
 ```
 
-Then, you can follow our instructions using the Google Colab demo. We're writing the documentation right now.
+Then, you can follow our instructions using the Google Colab demo 👉 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XmqitZzUtK-rohKXgKpjqR16npKjx6m9#offline=true&sandboxMode=true)
 
 ## ⌛ Status
 - [x] Alpha: We are demoing guap to users and receiving feedback

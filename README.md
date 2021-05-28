@@ -59,6 +59,11 @@ That's it...for now! Keep up-to-date with release announcements on Twitter [@gua
 ## 🪄 Quick tour
 To immediately use guap, here is how to quickly generate a profit/cost evaluation metric for a given confusion matrix: 
 
+Install `guap` library:
+```
+pip install guap
+```
+Flexible integration for any Python script:
 ```python
 >>> !pip install guap
 >>> from guap.metrics import guap_metric

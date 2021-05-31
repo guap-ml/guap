@@ -6,7 +6,7 @@
  From algorithms outputs to business outcomes.
 </h3>
 <p align="center">
-guap is an open-source python package that helps data team to get an ML evaluation metrics everyone can agree on by converting your model output to business outcomes, a.k.a. profits.</p>
+guap is an open-source python package that helps the data team to get ML evaluation metrics everyone can agree on by converting your model output to business outcomes, a.k.a. profits.</p>
 
 <h3 align="center">
  🤖 🪄 📈
@@ -41,7 +41,7 @@ guap is an open-source python package that helps data team to get an ML evaluati
 
 
 ## 🧞‍♂️ Why should I use guap?
-Our mission with guap is to align all stakeholders with measurable business outcomes by including the three core teams — business, data science and IT — throughout the life cycle of the AI models.
+Our mission with guap is to align all stakeholders with measurable business outcomes by including the three core teams — business, data science, and IT — throughout the life cycle of the AI models.
 
 * Make collaboration healthier and clearer between tech and non-tech people
 * Make better decisions at every stage of the ML project lifecycle
@@ -49,10 +49,10 @@ Our mission with guap is to align all stakeholders with measurable business outc
 Want to know more? Read [Why guap exist](https://ulyssebottello.com/why-guap/).
 
 ## ✨ Features
-We're on the journey to make sure every ML use-case that go to production is a valuable one. And it starts with a simple way to estimate the expected profit/cost of a model based on its confusion matrix.
+We're on the journey to make sure every ML use-case that goes to production is a valuable one. And it starts with a simple way to estimate the expected profit/cost of a model based on its confusion matrix.
 
 * **Get the total profit** Based on the test set, guap will give you the total expected profit based on the cost matrix. A great way to have an overview of the model profitability.
-* **Average profit per prediction** Along the total profit score, guap will give you the average profit/cost per prediction. Perfect if you have costs per prediction, or if you need to estimate the profitability while scaling.
+* **Average profit per prediction** Along with the total profit score, guap will give you the average profit/cost per prediction. Perfect if you have costs per prediction, or if you need to estimate the profitability while scaling.
 
 That's it...for now! Keep up-to-date with release announcements on Twitter [@guap_ml](https://twitter.com/guap_ml)!
 
@@ -83,7 +83,7 @@ Flexible integration for any Python script:
 Easy, right? 
 
 ## 👀 Demo
-You need a step-by-step guide on how to use guap on a very simple ML use-case? We got you.
+Do you need a step-by-step guide on how to use guap on a very simple ML use case? We got you.
 
 You can use guap metrics at every step of the ML lifecycle and on unlimited use-cases. But we think an interactive demo is worth thousands and thousands of words.
 

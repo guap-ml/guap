@@ -2,3 +2,14 @@
 #+AUTHOR: Guap Team
 #+OPTIONS: toc:3 ^:nil
 #+STARTUP: align indent fold entitiespretty logdone
+
+
+* TODO Integrate test process using pytest and hypothesis
+:PROPERTIES:
+:ID:       8d9e129c-3666-4cb8-a783-384c45a8b0e8
+:END:
+
+* TODO Integrate Travis
+:PROPERTIES:
+:ID:       644f11ee-7737-4b1b-89a2-17c71a22606e
+:END:

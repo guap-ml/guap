@@ -23,7 +23,8 @@ def _format_labels(y_list: List[int], label: int) -> List[int]:
 
 
 def _formula(cm: List[List[int]], cost_matrix: List[List[float]]) -> float:
-    score = np.dot(cm, cost_matrix).sum()
+    # score = np.dot(cm, cost_matrix).sum()
+    score = (cm * cost_matrix).sum()
 
     return score
 
@@ -46,7 +47,20 @@ def guap_metric(
         binary_y_pred = _format_labels(y_pred_encoded, label)
         cm = guap_cm(binary_y_true, binary_y_pred)
         results[le.classes_[i]] = _formula(cm, cost_matrix)
-    # _tmp = sum(results.values())
-    output = {"average": sum(results.values()), "sum": mean(results.values())}
+    _tmp = sum(results.values())
+    output = {"sum": sum(results.values()), "average": mean(results.values())}
 
     return output
+
+
+def binary_guap_metric(
+    y_true: List[int], y_pred: List[int], cost_matrix: List[List[float]]
+) -> float:
+    le = LabelEncoder()
+    y_true_encoded = le.fit_transform(y_true)
+    y_pred_encoded = le.transform(y_pred)
+    labels = le.transform(le.classes_)
+    cm = guap_cm(y_true_encoded, y_pred_encoded)
+    score = _formula(cm, cost_matrix)
+
+    return score

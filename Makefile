@@ -3,7 +3,7 @@
 .DEFAULT_GOAL := help
 
 repo_name = guap
-version = 0.1.0
+version = 0.1.4
 
 
 help:
@@ -67,7 +67,7 @@ build: ## Build the python package using Poetry.
 
 generate_setup: ## Generate a setup.py file.
 	@tar -xvf dist/*.tar.gz '*/setup.py'
-	@cp $$(find . -name setup.py | head -1) setup.py
+	@cp guap-${version}/setup.py setup.py
 	@poetry run black setup.py
 
 clean: ## Delete unwanted files.

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "guap"
-version = "0.1.0"
+version = "0.1.4"
 description = ""
 authors = ["Ulysse Bottello <ulysse@guap.ml>"]
 readme = "README.md"

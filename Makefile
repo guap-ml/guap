@@ -44,7 +44,7 @@ reqs_dev: ## Generate a requirements_dev.txt file.
 	@poetry export --dev --without-hashes -f requirements.txt -o requirements/dev.txt
 
 cloc: ## Count blank lines, comment lines, and physical lines of source code.
-	@poetry run cloc --exclude-dir .venv,.DS_Store --exclude-ext gif,pyc .
+	@poetry run cloc --exclude-dir .venv,.DS_Store --exclude-ext gif,pyc ./guap
 
 code_metrics: ## Compute various metrics from the source code (code quality).
 	@poetry run radon cc mi hal . -a -na
@@ -94,5 +94,4 @@ clean: ## Delete unwanted files.
 	@find . -name '*.pyc' -exec rm --force {} +
 	@find . -name '*.pyo' -exec rm --force {} +
 	@find . -name '*~'    -exec rm --force {} +
-	@find . -name '.tox'  -exec rm --force {} +
 	@echo "Your repo is clean! 🧹 👌🏼 ✨"

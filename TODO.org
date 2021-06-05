@@ -4,12 +4,37 @@
 #+STARTUP: align indent fold entitiespretty logdone
 
 
-* TODO Integrate test process using pytest and hypothesis
+* Papers to read :research:
+:PROPERTIES:
+:ID:       56834788-1aec-42cc-996c-89577b032089
+:END:
+* TODO Integrate test process using pytest and hypothesis :code:test:
 :PROPERTIES:
 :ID:       8d9e129c-3666-4cb8-a783-384c45a8b0e8
 :END:
 
-* TODO Integrate Travis
+* TODO Integrate Travis :cicd:
 :PROPERTIES:
 :ID:       644f11ee-7737-4b1b-89a2-17c71a22606e
+:END:
+
+* TODO Integrate mypy :code:test:
+:PROPERTIES:
+:ID:       045d481b-ac84-4d2f-bc3f-cff87c6e6594
+:END:
+* TODO Prepare a demo using wandb :demo:
+:PROPERTIES:
+:ID:       3414c12d-ba02-4cc2-8c6e-f6c639a8bb1b
+:END:
+* IDEA Support probs argument in labels lists :code:
+:PROPERTIES:
+:ID:       1b3debb8-f26b-4b26-b581-0e26a9c236fe
+:END:
+* IDEA Reduce external dependencies when possible :code::performance:
+:PROPERTIES:
+:ID:       07141f1f-f401-40a2-8355-3f8820aefd43
+:END:
+* IDEA Integrate mkdocs for documentation? :doc:
+:PROPERTIES:
+:ID:       5cca06ca-f92e-49ce-8c3a-8a855117867e
 :END:

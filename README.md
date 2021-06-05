@@ -65,10 +65,9 @@ pip install guap
 ```
 Flexible integration for any Python script:
 ```python
->>> !pip install guap
 >>> from guap.metrics import guap_metric
 
-# Set the confusion matrix
+# Labels example
 >>> y_true = ["cat", "ant", "cat", "cat", "ant", "bird"]
 >>> y_pred = ["ant", "ant", "cat", "cat", "ant", "cat"]
 
